@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greengrocer</title>
+    <link rel="icon" type="images/jpg" href="./Images/fav.jpeg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/order.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="chk" id="chk1">
+        <section class="logo">
+            <img src="./Images/Logo.jpg" alt="logo">  
+            <h1>Green Grocer</h1>
+        </section>
+        
+        <section class="search-box">   
+            <form>
+                <input type="text" name="search" id="srch" placeholder="Search" aria-label="search">
+                <button type="submit" id="butn1">‎<i class="fa fa-search"></i></button>
+            </form>
+        </section>
+        <ul class="nav-ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Order</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Loyalty Registration</a></li>
+            <li><a href="#">Login</a></li>
+            <li>
+                <a href="#">‎<i class="fa fa-facebook"></i></a> &nbsp;
+                <a href="#">‎<i class="fa fa-twitter"></i></a> &nbsp;
+                <a href="#">‎<i class="fa fa-instagram"></i></a>
+            </li>
+        </ul>
+       
+        <section class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars">‎</i>
+            </label>
+        </section>
+    </header>
+    <br><br>
+
+    <main>
+        <section class="order-section">
+            <h2 class="heading">
+                <span>Order Now</span>
+            </h2>
+            <form class="order-form">
+                <!-- Fruits Section -->
+                <section id="fruits" class="form-group">
+                    <h2>Fruits</h2>
+                    <section class="products">
+                        <!-- Product 1: Apple -->
+                        <section class="product">
+                            <img src="./Images/Fruits/apple.webp" alt="Apple">
+                            <h3>Apple</h3>
+                            <p class="price">Rs. 250 </p>
+                            <label for="Apple">Quantity (kg):</label>
+                            <input type="number" id="Apple" name="Apple" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 2: Water melon -->
+                        <section class="product">
+                            <img src="./Images/Fruits/watermelon.jpg" alt="Water melon">
+                            <h3>Water melon</h3>
+                            <p class="price">Rs. 150 </p>
+                            <label for="Watermelon">Quantity (kg):</label>
+                            <input type="number" id="Watermelon" name="Water melon" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 3: Guawa -->
+                        <section class="product">
+                            <img src="./Images/Fruits/guawa.jpg" alt="Guawa">
+                            <h3>Guawa</h3>
+                            <p class="price">Rs. 210 </p>
+                            <label for="Guawa">Quantity (kg):</label>
+                            <input type="number" id="Guawa" name="Guawa" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 4: Orange -->
+                        <section class="product">
+                            <img src="./Images/Fruits/orange.jpg" alt="Orange">
+                            <h3>Orange</h3>
+                            <p class="price">Rs. 190 </p>
+                            <label for="Orange">Quantity (kg):</label>
+                            <input type="number" id="Orange" name="Orange" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 5: Mango -->
+                        <section class="product">
+                            <img src="./Images/Fruits/mango.jpg" alt="Mango">
+                            <h3>Mango</h3>
+                            <p class="price">Rs. 200 </p>
+                            <label for="Mango">Quantity (kg):</label>
+                            <input type="number" id="Mango" name="Mango" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 6: Strawberry -->
+                        <section class="product">
+                            <img src="./Images/Fruits/strawberry.png" alt="Strawberry">
+                            <h3>Strawberry</h3>
+                            <p class="price">Rs. 560 </p>
+                            <label for="Strawberry">Quantity (kg):</label>
+                            <input type="number" id="Strawberry" name="Strawberry" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 7: Papaya -->
+                        <section class="product">
+                            <img src="./Images/Fruits/papaya.jpeg" alt="Papaya">
+                            <h3>Papaya</h3>
+                            <p class="price">Rs. 320 </p>
+                            <label for="Papaya">Quantity (kg):</label>
+                            <input type="number" id="Papaya" name="Papaya" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 8: Grapes -->
+                        <section class="product">
+                            <img src="./Images/Fruits/grapes.jpeg" alt="Grapes">
+                            <h3>Grapes</h3>
+                            <p class="price">Rs. 480 </p>
+                            <label for="Grapes">Quantity (kg):</label>
+                            <input type="number" id="Grapes" name="Grapes" min="0" step="0.1" placeholder="0">
+                        </section>
+                    </section>
+                </section>
+        
+                <!-- Vegetables Section -->
+                <section id="vegetables" class="form-group">
+                    <h2>Vegetables</h2>
+                    <section class="products">
+                        <!-- Product 1: Beetroot -->
+                        <section class="product">
+                            <img src="./Images/Vegetables/Beetroot.webp" alt="Beetroot">
+                            <h3>Beetroot</h3>
+                            <p class="price">Rs. 220 </p>
+                            <label for="Beetroot">Quantity (kg):</label>
+                            <input type="number" id="Beetroot" name="Beetroot" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 2: Cabbage -->
+                        <section class="product">
+                            <img src="./Images/Vegetables/Cabbage.jpg" alt="Cabbage">
+                            <h3>Cabbage</h3>
+                            <p class="price">Rs. 300 </p>
+                            <label for="Cabbage">Quantity (kg):</label>
+                            <input type="number" id="Cabbage" name="Cabbage" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 3: Capsicum -->
+                        <section class="product">
+                            <img src="./images/Vegetables/Capsicum.jpg" alt="Capsicum">
+                            <h3>Capsicum</h3>
+                            <p class="price">Rs. 310 </p>
+                            <label for="Capsicum">Quantity (kg):</label>
+                            <input type="number" id="Capsicum" name="Capsicum" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 4: Carrot -->
+                        <section class="product">
+                            <img src="./Images/Vegetables/carrot.jpg" alt="Carrot">
+                            <h3>Carrot</h3>
+                            <p class="price">Rs. 250 </p>
+                            <label for="Carrot">Quantity (kg):</label>
+                            <input type="number" id="Carrot" name="Carrot" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 5: Leeks -->
+                        <section class="product">
+                            <img src="./Images/Vegetables/Leeks.jpeg" alt="Leeks">
+                            <h3>Leeks</h3>
+                            <p class="price">Rs. 280 </p>
+                            <label for="Leeks">Quantity (kg):</label>
+                            <input type="number" id="Leeks" name="Leeks" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 6: Onion -->
+                        <section class="product">
+                            <img src="./Images/Vegetables/Onion.jpeg" alt="Onion">
+                            <h3>Onion</h3>
+                            <p class="price">Rs. 70 </p>
+                            <label for="Onion">Quantity (kg):</label>
+                            <input type="number" id="Onion" name="Onion" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 7: Potato -->
+                        <section class="product">
+                            <img src="./Images/Vegetables/Potato.jpeg" alt="Potato">
+                            <h3>Potato</h3>
+                            <p class="price">Rs. 160 </p>
+                            <label for="potato">Quantity (kg):</label>
+                            <input type="number" id="potato" name="potato" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 8: Pumpkin -->
+                        <section class="product">
+                            <img src="./Images/Vegetables/Pumpkin.png" alt="Pumpkin">
+                            <h3>Pumpkin</h3>
+                            <p class="price">Rs. 240 </p>
+                            <label for="Pumpkin">Quantity (kg):</label>
+                            <input type="number" id="Pumpkin" name="Pumpkin" min="0" step="0.1" placeholder="0">
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Dairy Produce Section -->
+                <section id="dairy-produce" class="form-group">
+                    <h2>Dairy Produce</h2>
+                    <section class="products">
+                        <!-- Product 1: Kothmale Milk -->
+                        <section class="product">
+                            <img src="./Images/Dairy/Kothmale180mlvanilla.jpg" alt="Kothmale Milk">
+                            <h3>Kothmale Milk(1 l)</h3>
+                            <p class="price">Rs. 320</p>
+                            <label for="KothmaleMilk">Quantity (pcs):</label>
+                            <input type="number" id="KothmaleMilk" name="Kothmale Milk" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 2: Kothmale Cheese -->
+                        <section class="product">
+                            <img src="./Images/Dairy/KOTMALE-CHEESE-SPREAD-175G-1.webp" alt="Kothmale Cheese">
+                            <h3>Kothmale Cheese(170 g)</h3>
+                            <p class="price">Rs. 500</p>
+                            <label for="KothmaleCheese">Quantity (pcs):</label>
+                            <input type="number" id="KothmaleCheese" name="Kothmale Cheese" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 3: Kothmale Yoghurt -->
+                        <section class="product">
+                            <img src="./Images/Dairy/Kothmalesetyoghurt.jpg" alt="Kothmale Yoghurt">
+                            <h3>Kothmale Yoghurt</h3>
+                            <p class="price">Rs. 60</p>
+                            <label for="KothmaleYoghurt">Quantity (pcs):</label>
+                            <input type="number" id="KothmaleYoghurt" name="Kothmale Yoghurt" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 4: Milk Powder -->
+                        <section class="product">
+                            <img src="./Images/Dairy/Lakspray1KG.jpeg" alt="Milk Powder">
+                            <h3>Milk Powder(1 kg)</h3>
+                            <p class="price">Rs. 1180</p>
+                            <label for="MilkPowder">Quantity (pcs):</label>
+                            <input type="number" id="MilkPowder" name="Milk Powder" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 5: Astra Butter -->
+                        <section class="product">
+                            <img src="./Images/Dairy/Astra500G.jpg" alt="Astra Butter">
+                            <h3>Astra Butter(400 g)</h3>
+                            <p class="price">Rs. 480</p>
+                            <label for="AstraButter">Quantity (pcs):</label>
+                            <input type="number" id="AstraButter" name="Astra Butter" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 6: Richlife Curd -->
+                        <section class="product">
+                            <img src="./Images/Dairy/RICH-LIFE-SET-KIRI-DAIRY-DESSERT-950G-1.png" alt="Richlife Curd">
+                            <h3>Richlife Curd(1 l)</h3>
+                            <p class="price">Rs. 600</p>
+                            <label for="RichlifeCurd">Quantity (pcs):</label>
+                            <input type="number" id="RichlifeCurd" name="Richlife Curd" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 7: Richlife KiriPani -->
+                        <section class="product">
+                            <img src="./Images/Dairy/Richlifekiripani.jpg" alt="Richlife KiriPani">
+                            <h3>Richlife KiriPani</h3>
+                            <p class="price">Rs. 120</p>
+                            <label for="RichlifeKiriPani">Quantity (pcs):</label>
+                            <input type="number" id="RichlifeKiriPani" name="Richlife KiriPani" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 8: Magic Ice Cream -->
+                        <section class="product">
+                            <img src="./Images/Dairy/Magicicecream1L.jpg" alt="Magic Ice Cream">
+                            <h3>Magic Ice Cream(1l)</h3>
+                            <p class="price">Rs. 790</p>
+                            <label for="MagicIceCream">Quantity (pcs):</label>
+                            <input type="number" id="MagicIceCream" name="Magic Ice Cream" min="0" placeholder="0">
+                        </section>
+                    </section>
+                </section>
+        
+                <!-- Meat and Seafood Section -->
+                <section id="meat-seafood" class="form-group">
+                    <h2>Meat and Seafood</h2>
+                    <section class="products">
+                        <!-- Product 1: Chicken -->
+                        <section class="product">
+                            <img src="./Images/MeatandSeafood/Chicken.jpg" alt="Chicken">
+                            <h3>Chicken</h3>
+                            <p class="price">Rs. 1280</p>
+                            <label for="Chicken">Quantity (kg):</label>
+                            <input type="number" id="Chicken" name="Chicken" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 2: Beef -->
+                        <section class="product">
+                            <img src="./Images/MeatandSeafood/beef.jpeg" alt="Beef">
+                            <h3>Beef</h3>
+                            <p class="price">Rs. 2000</p>
+                            <label for="Beef">Quantity (kg):</label>
+                            <input type="number" id="Beef" name="Beef" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 3: Pork -->
+                        <section class="product">
+                            <img src="./Images/MeatandSeafood/pork.webp" alt="Pork">
+                            <h3>Pork</h3>
+                            <p class="price">Rs. 1990</p>
+                            <label for="Pork">Quantity (kg):</label>
+                            <input type="number" id="Pork" name="Pork" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 4: Prawns -->
+                        <section class="product">
+                            <img src="./Images/MeatandSeafood/prawns.webp" alt="Prawns">
+                            <h3>Prawns</h3>
+                            <p class="price">Rs. 2500</p>
+                            <label for="Prawns">Quantity (kg):</label>
+                            <input type="number" id="Prawns" name="Prawns" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 5: Salaya -->
+                        <section class="product">
+                            <img src="./Images/MeatandSeafood/Salaya.jpg" alt="Salaya">
+                            <h3>Salaya</h3>
+                            <p class="price">Rs. 50</p>
+                            <label for="Salaya">Quantity (kg):</label>
+                            <input type="number" id="Salaya" name="Salaya" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 6: Thalapath -->
+                        <section class="product">
+                            <img src="./Images/MeatandSeafood/Thalapath.jpg" alt="Thalapath">
+                            <h3>Thalapath</h3>
+                            <p class="price">Rs. 2000</p>
+                            <label for="Thalapath">Quantity (kg):</label>
+                            <input type="number" id="Thalapath" name="Thalapath" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 7: Maldives -->
+                        <section class="product">
+                            <img src="./Images/MeatandSeafood/maldives.jpeg" alt="Maldives">
+                            <h3>Maldives</h3>
+                            <p class="price">Rs. 3000</p>
+                            <label for="Maldives">Quantity (kg):</label>
+                            <input type="number" id="Maldives" name="Maldives" min="0" step="0.1" placeholder="0">
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Baking and Cooking Ingredients Section -->
+                <section id="baking-cooking" class="form-group">
+                    <h2>Baking and Cooking Ingredients</h2>
+                    <section class="products">
+                        <!-- Product 1: Salt -->
+                        <section class="product">
+                            <img src="./Images/BakingandCooking/Salt.jpg" alt="Salt">
+                            <h3>Salt(100 g)</h3>
+                            <p class="price">Rs. 100</p>
+                            <label for="Salt">Quantity (pcs):</label>
+                            <input type="number" id="Salt" name="Salt" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 2: Soy Sauce -->
+                        <section class="product">
+                            <img src="./Images/BakingandCooking/Soysauce.jpeg" alt="Soy Sauce">
+                            <h3>Sauce(300 ml)</h3>
+                            <p class="price">Rs. 240</p>
+                            <label for="SoySauce">Quantity (pcs):</label>
+                            <input type="number" id="SoySauce" name="Soy Sauce" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 3: Vinegar -->
+                        <section class="product">
+                            <img src="./Images/BakingandCooking/Vinegar.png" alt="Vinegar">
+                            <h3>Vinegar(400 ml)</h3>
+                            <p class="price">Rs. 360</p>
+                            <label for="Vinegar">Quantity (pcs):</label>
+                            <input type="number" id="Vinegar" name="Vinegar" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 5: Black Pepper -->
+                        <section class="product">
+                            <img src="./Images/BakingandCooking/Pepper.webp" alt="Black Pepper">
+                            <h3>Black Pepper</h3>
+                            <p class="price">Rs. 1200</p>
+                            <label for="BlackPepper">Quantity (kg):</label>
+                            <input type="number" id="BlackPepper" name="Black Pepper" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 5: Cinnamon -->
+                        <section class="product">
+                            <img src="./Images/BakingandCooking/Cinnamon.jpg" alt="Cinnamon">
+                            <h3>Cinnamon</h3>
+                            <p class="price">Rs. 2000</p>
+                            <label for="Cinnamon">Quantity (kg):</label>
+                            <input type="number" id="Cinnamon" name="Cinnamon" min="0" step="0.1" placeholder="0">
+                        </section>
+                        <!-- Product 6: Wheat Flour -->
+                        <section class="product">
+                            <img src="./Images/BakingandCooking/WheatFlour.jpg" alt="Wheat Flour">
+                            <h3>Wheat Flour(1 kg)</h3>
+                            <p class="price">Rs. 300</p>
+                            <label for="WheatFlour">Quantity (pcs):</label>
+                            <input type="number" id="WheatFlour" name="Wheat Flour" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 7: Icing Sugar -->
+                        <section class="product">
+                            <img src="./Images/BakingandCooking/Icingsugar.jpeg" alt="Icing Sugar"   >
+                            <h3> Icing Sugar(1 kg)</h3>
+                            <p class="price">Rs. 500</p>
+                            <label for="IcingSugar">Quantity (pcs):</label>
+                            <input type="number" id="IcingSugar" name="Icing Sugar" min="0" placeholder="0">
+                        </section>
+                        <!-- Product 8: Brown Sugar -->
+                        <section class="product">
+                            <img src="./Images/BakingandCooking/Brownsugar.jpg" alt="Brown Sugar">
+                            <h3>Brown Sugar(1 kg)</h3>
+                            <p class="price">Rs. 270</p>
+                            <label for="BrownSugar">Quantity (pcs):</label>
+                            <input type="number" id="BrownSugar" name="Brown Sugar" min="0" placeholder="0">
+                        </section>
+                    </section>
+                </section>
+            </form>
+        </section>
+        <section id="order-summary" class="form-group">
+            <h2>Order Summary</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Items</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>‎</th>
+                </tr>
+                </thead>
+                <tbody id="order-items">
+                <!-- Example row -->
+                <tr>
+                    <td class="item">
+                    <img src="" alt="Items">
+                    </td>
+                    <td class="quantity"></td>
+                    <td class="price"></td>
+                    <td class="actions"></td>
+                </tr>
+                <!-- More order items will be dynamically added here -->
+                </tbody>
+                <tfoot> 
+                    <tr>
+                        <td colspan="3">Total Price:</td>
+                        <td id="total-price">Rs. 0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <section class="buttons">
+            <button type="button" id="add-favorites-btn">Add to Favorites</button>
+            <button type="button" id="apply-favorites-btn">Apply Favorites</button>
+            </section>  
+            <button class="btn1" onclick="navigateToCheckout()">Buy Now</button>
+        </section>
+        <script>
+            function navigateToCheckout() {
+                const orderSummary = collectOrderSummary();
+                localStorage.setItem('orderSummary', JSON.stringify(orderSummary));
+                localStorage.setItem('totalPrice', document.getElementById('total-price').innerText);
+                window.location.href = 'checkout.html';
+            }
+        </script>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer-distributed">
+
+    <section class="footer-left">
+        <h3>Green<span>Grocer</span></h3>
+
+        <section class="footer-links">
+            <p class="footer-links">
+                <a href=".#">Home</a>
+                &nbsp;|&nbsp;
+                <a href="./index.html">Order</a>
+                &nbsp;|&nbsp;
+                <a href="#">About Us</a>
+            </p>
+        </section>
+        <p class="footer-company-name">Copyright © 2024 <strong>GreenGrocer</strong> All rights reserved</p>
+    </section>
+
+    <section class="footer-center">
+        <section>
+            <i class="fa fa-map-marker"></i>
+            <p><span>D.S.Senanayake RD</span>
+                Kandy</p>
+        </section>
+
+        <section>
+            <i class="fa fa-phone"></i>
+            <p>+94 81-747 87 89</p>
+        </section>
+        <section>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">greengrocer@gmail.com</a></p>
+        </section>
+    </section>
+    <section class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>GreenGrocer</strong> is a grocery website where you can find and buy grocery products online.
+        </p>
+        <section class="footer-icons">
+            <a href="#">‎<i class="fa fa-facebook"></i></a>
+            <a href="#">‎<i class="fa fa-instagram"></i></a>
+            <a href="#">‎<i class="fa fa-linkedin"></i></a>
+            <a href="#">‎<i class="fa fa-twitter"></i></a>
+            <a href="#">‎<i class="fa fa-youtube"></i></a>
+        </section>
+    </section>
+  </footer>
+  <script src="./Java/order.js"></script>
+</body>
+</html>
