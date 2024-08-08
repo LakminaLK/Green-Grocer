@@ -93,20 +93,20 @@
                     </section>
                     <section class="inputBox">
                         <span>Credit card number :</span>
-                        <input type="text" placeholder="1111-2222-3333-4444" aria-label="card" required>
+                        <input type="number" placeholder="1111-2222-3333-4444" aria-label="card" required>
                     </section>
                     <section class="inputBox">
                         <span>Exp month :</span>
-                        <input type="number" placeholder="January" aria-label="month" required>
+                        <input type="number" max="12" min="0" placeholder="January" aria-label="month" required>
                     </section>
                     <section class="flex">
                         <section class="inputBox">
                             <span>Exp year :</span>
-                            <input type="number" placeholder="2022" aria-label="year" required>
+                            <input type="number" max="9999" min="2000" placeholder="2022" aria-label="year" required>
                         </section>
                         <section class="inputBox">
                             <span>CVV :</span>
-                            <input type="number" placeholder="1234" aria-label="cvv" required>
+                            <input type="number" max="999" min="000" placeholder="123" aria-label="cvv" required>
                         </section>
                     </section>
                 </section>
