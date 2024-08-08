@@ -226,10 +226,11 @@ header .menu {
 .order-summary table tbody tr td {
   padding: 10px;
   border: 1px solid #ddd;
+  font-weight: normal; /* Ensures all cells have normal font-weight */
 }
 
 .order-summary table tbody tr:last-child td {
-  font-weight: 600;
+  font-weight: normal; /* Ensures the last row's font-weight is normal */
 }
 
 /* Order form styles */
@@ -582,7 +583,7 @@ footer {
       font-size: 0.9rem;
   }
   .order-summary table tbody tr:last-child td {
-      font-weight: 600;
+      font-weight: normal;
   }
   .container form .submit-btn {
       font-size: 15px;
@@ -609,7 +610,7 @@ footer {
       font-size: 0.8rem;
   }
   .order-summary table tbody tr:last-child td {
-      font-weight: 600;
+      font-weight: normal;
   }
   .container form .submit-btn {
       font-size: 13px;
