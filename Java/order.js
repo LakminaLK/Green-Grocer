@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function determineQuantityDisplay(productName, quantity) {
-        const quantityUnits = ['Icing Sugar', 'Brown Sugar', 'Wheat Flour', 'Vinegar', 'Soy Sauce', 'Salt',
+        const quantityUnits = ['Icing Sugar', 'Brown Sugar', 'Wheat Flour', 'Vinegar', 'Sauce', 'Salt',
             'Kothmale Milk', 'Kothmale Cheese', 'Kothmale Yoghurt', 'Milk Powder',
             'Astra Butter', 'Richlife Curd', 'Richlife KiriPani', 'Magic Ice Cream',
             'Milkmaid'];
